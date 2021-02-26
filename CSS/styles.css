@@ -30,6 +30,7 @@ header a {
 .cta {
   background-color: #bb0000;
   color: white;
+  font-size: 1.5em;
 }
 
 .reviews {
@@ -46,4 +47,14 @@ header a {
 
 footer {
   text-align: center;
+}
+
+/* Home page */
+.welcome {
+  background-image: url("../Images/home-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  min-height: 70vh;
 }
