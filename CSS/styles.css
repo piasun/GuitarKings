@@ -17,10 +17,24 @@ h2,
 .product-list h2 {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
+
+Nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+}
+
 header,
 footer {
   background-color: #202020;
   color: white;
+}
+
+/* Links */
+a {
+  text-decoration: none;
 }
 
 header a {
@@ -31,6 +45,10 @@ header a {
   background-color: #bb0000;
   color: white;
   font-size: 1.5em;
+}
+
+.active {
+  text-decoration: underline;
 }
 
 .reviews {
@@ -57,4 +75,20 @@ footer {
   background-position-x: right;
   background-position-y: bottom;
   min-height: 70vh;
+}
+
+.selling-points__images {
+  border-radius: 100px;
+}
+
+.review__images {
+  border-radius: 50%;
+}
+
+/* Contact page */
+input,
+select,
+textarea {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
 }
