@@ -120,6 +120,7 @@ footer {
 
 .selling-points__images {
   border-radius: 100px;
+  width: 100%;
 }
 
 .reviews {
