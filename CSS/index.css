@@ -1,6 +1,9 @@
 .welcome {
-  background-image: url("../Images/home-header.jpg") center bottom no-repeat;
+  background-image: url("../Images/home-header.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
   min-height: 70vh;
   position: relative;
 }
