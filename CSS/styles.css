@@ -78,6 +78,26 @@ header a {
   text-transform: uppercase;
   padding: 10px 40px;
   border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.cta:before {
+  content: "";
+  padding: 10px;
+  background: #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  height: 100px;
+  top: -40px;
+  left: -100px;
+  transition: left ease-in-out 1s;
+  opacity: 0.3;
+}
+
+.cta:hover:before {
+  left: 110%;
 }
 
 .cta-small {
@@ -288,6 +308,23 @@ textarea {
   margin: auto;
 }
 
+.guitars .products {
+  animation: show-guitars 1s forwards;
+  opacity: 0;
+}
+
+@keyframes show-guitars {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .product-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -300,7 +337,7 @@ textarea {
 
 @media (min-width: 600px) {
   .featured {
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .reviews__content,
@@ -311,7 +348,6 @@ textarea {
   header {
     justify-content: start;
   }
-
 
   nav {
     display: block;
@@ -330,7 +366,7 @@ textarea {
 
 @media (min-width: 800px) {
   .featured {
-    grid-template-columns: repeat(4, 1fr)
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .reviews__content div {
@@ -348,6 +384,6 @@ textarea {
   }
 
   .cta {
-    padding: 10px 80px; 
+    padding: 10px 80px;
   }
 }
