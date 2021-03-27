@@ -1,0 +1,52 @@
+@media (min-width: 600px) {
+  .featured {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reviews__content,
+  .selling-points {
+    flex-direction: row;
+  }
+
+  header {
+    justify-content: start;
+  }
+
+  nav {
+    display: block;
+    position: static;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 0px;
+  }
+
+  header label {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .featured {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .reviews__content div {
+    margin: 50px;
+  }
+
+  .welcome {
+    background-position-x: right;
+  }
+
+  .welcome__content {
+    top: 100px;
+    left: 100px;
+    transform: none;
+  }
+
+  .cta {
+    padding: 10px 80px;
+  }
+}
